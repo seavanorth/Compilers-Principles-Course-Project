@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrontEndWindowClass</class>
+ <widget class="QMainWindow" name="FrontEndWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>903</width>
+    <height>697</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>FrontEndWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="8" column="0" colspan="3">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="widget_guide">
+       <attribute name="title">
+        <string>*使用说明书*</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_18">
+        <item row="0" column="0">
+         <widget class="QTextBrowser" name="txb_guide"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget_in_out">
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <attribute name="title">
+        <string>输入输出模块 →</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="2" column="0">
+         <widget class="QPushButton" name="btn_Reg">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="font">
+           <font>
+            <family>楷体</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>正则表达式</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="7" colspan="2">
+         <widget class="QTextBrowser" name="txb_BNF"/>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="btn_SourceCode">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="font">
+           <font>
+            <family>楷体</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>源程序</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="le_Reg">
+          <property name="text">
+           <string>必选</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4" colspan="2">
+         <widget class="QLineEdit" name="le_SourceCode">
+          <property name="text">
+           <string>必选</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QTextBrowser" name="txb_Reg"/>
+        </item>
+        <item row="2" column="7">
+         <widget class="QPushButton" name="btn_BNF">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="font">
+           <font>
+            <family>楷体</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>BNF文法</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="8">
+         <widget class="QLineEdit" name="le_BNF">
+          <property name="text">
+           <string>必选</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3" colspan="3">
+         <widget class="QTextBrowser" name="txb_SourceCode"/>
+        </item>
+       </layout>
+       <zorder>le_Reg</zorder>
+       <zorder>txb_BNF</zorder>
+       <zorder>le_SourceCode</zorder>
+       <zorder>txb_Reg</zorder>
+       <zorder>le_BNF</zorder>
+       <zorder>btn_Reg</zorder>
+       <zorder>btn_SourceCode</zorder>
+       <zorder>btn_BNF</zorder>
+       <zorder>txb_SourceCode</zorder>
+      </widget>
+      <widget class="QWidget" name="widget_lexical_analysis">
+       <attribute name="title">
+        <string>词法分析模块 →</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="3" column="0" colspan="4">
+         <widget class="QTabWidget" name="tabWidget_2">
+          <property name="currentIndex">
+           <number>4</number>
+          </property>
+          <widget class="QWidget" name="widget_NFA">
+           <attribute name="title">
+            <string>NFA →</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_8">
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="tbw_nfa"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>DFA →</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_13">
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="tbw_dfa"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_7">
+           <attribute name="title">
+            <string>最小化DFA →</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_14">
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="tbw_min_dfa"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="widget_lexer">
+           <attribute name="title">
+            <string>词法分析程序(源程序) →</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_15">
+            <item row="0" column="0">
+             <widget class="QTextBrowser" name="txb_lex_code"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="widget_token">
+           <attribute name="title">
+            <string>词法分析结果</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="0" column="0">
+             <widget class="QTextBrowser" name="txb_token"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="0" alignment="Qt::AlignLeft">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>    选择查看的Token类型--------》</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget_syntax_analysis">
+       <attribute name="title">
+        <string>语法分析模块</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="0">
+         <widget class="QTabWidget" name="tabWidget_3">
+          <property name="currentIndex">
+           <number>4</number>
+          </property>
+          <widget class="QWidget" name="tab_5">
+           <attribute name="title">
+            <string>文法化简 →</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <widget class="QListWidget" name="list_simplify"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_6">
+           <attribute name="title">
+            <string>消除左递归、提取左公因子 →</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_17">
+            <item row="0" column="0">
+             <widget class="QListWidget" name="list_eliminate"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_10">
+           <attribute name="title">
+            <string>First集、Follow集 →</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="1" rowspan="3">
+             <widget class="Line" name="line_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="font">
+               <font>
+                <family>楷体</family>
+                <pointsize>10</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>First集</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QListWidget" name="list_first_set"/>
+            </item>
+            <item row="2" column="2">
+             <widget class="QListWidget" name="list_follow_set"/>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLabel" name="label_6">
+              <property name="font">
+               <font>
+                <family>楷体</family>
+                <pointsize>10</pointsize>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Follow集</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_11">
+           <attribute name="title">
+            <string>LL(1)分析表 →</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_16">
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="tbw_LL1"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="widget_tree">
+           <attribute name="title">
+            <string>语法树</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QTextBrowser" name="txb_tree"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="6" column="0" rowspan="2" colspan="3">
+     <widget class="Line" name="line_1">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="cbx_language">
+      <property name="font">
+       <font>
+        <family>华文楷体</family>
+        <pointsize>14</pointsize>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="currentText">
+       <string>未选择语言(必选)</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>未选择语言(必选)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>tiny</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>minic</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="btn_guide">
+      <property name="text">
+       <string>→使用说明书←</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="btn_start_scan">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>①词法分析</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="btn_start_parse">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>②语法分析</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>903</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="FrontEndWindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>
