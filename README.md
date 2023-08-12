@@ -20,7 +20,11 @@ More details about project in 'doc' directory!
 ## Build
 
 1. Clone the repository
-2. Open the project with [Visual Studio 2022](https://visualstudio.microsoft.com/zh-hans/vs/)
+2. Download [Visual Studio 2022](https://visualstudio.microsoft.com/zh-hans/vs/) and make the settings right for c++
+3. Get [Qt Visual Stuido Tools](https://marketplace.visualstudio.com/items?itemName=TheQtCompany.QtVisualStudioTools-19123) in Visual Stuido Tool Marketplace or get from [Qt](https://www.qt.io/blog/qt-vs-tools-for-visual-studio-2022) and make the settings right for Qt
+4. Open the project Visual Studio 2022 and Run it
+
+You can google for details of each step!
 
 If you encounter any promblem, please google it. Sorry for not offering specific guides!
 
