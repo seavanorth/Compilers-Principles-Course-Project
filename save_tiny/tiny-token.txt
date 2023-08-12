@@ -1,0 +1,38 @@
+8:  reserved word: read
+8:  ID, name= n
+8:  ;
+9:  ID, name= i
+9:  :=
+9:  NUM, val= 2
+9:  ;
+11:  reserved word: repeat
+12:  reserved word: if
+12:  (
+12:  ID, name= n
+12:  /
+12:  ID, name= i
+12:  )
+12:  =
+12:  NUM, val= 0
+12:  reserved word: then
+13:  reserved word: write
+13:  NUM, val= 0
+14:  reserved word: else
+15:  ID, name= i
+15:  :=
+15:  ID, name= i
+15:  +
+15:  NUM, val= 1
+15:  ;
+16:  reserved word: end
+17:  reserved word: until
+17:  (
+17:  ID, name= i
+17:  *
+17:  ID, name= i
+17:  )
+17:  Lex Error Token: >
+17:  ID, name= n
+17:  ;
+19:  reserved word: write
+19:  NUM, val= 1

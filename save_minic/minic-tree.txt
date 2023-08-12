@@ -1,0 +1,27 @@
+Syntax error at line 11: syntax error
+Current token: ID: struct
+Syntax Tree:
+  FuncK: (IntK) (IdK: factorial)
+    ParamsK
+      IntK
+        IdK: n
+    IfK
+      Op: ==
+        IdK: n
+        ConstK: 0
+      ReturnK
+        ConstK: 1
+    ReturnK
+      Op: *
+        IdK: n
+        CallK: (IdK: factorial)
+          Op: -
+            IdK: n
+            ConstK: 1
+  FuncK: (IntK) (IdK: main)
+    ParamsK
+      IntK
+        IdK: n
+    ReturnK
+      CallK: (IdK: factorial)
+        IdK: n

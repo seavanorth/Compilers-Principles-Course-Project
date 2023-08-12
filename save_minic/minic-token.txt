@@ -1,0 +1,48 @@
+1:  Reserved Word: int
+1:  ID: factorial
+1:  (
+1:  Reserved Word: int
+1:  ID: n
+1:  )
+1:  {
+2:  Reserved Word: if
+2:  (
+2:  ID: n
+2:  ==
+2:  NUM: 0
+2:  )
+3:  Reserved Word: return
+3:  NUM: 1
+3:  ;
+4:  Reserved Word: return
+4:  ID: n
+4:  *
+4:  ID: factorial
+4:  (
+4:  ID: n
+4:  -
+4:  NUM: 1
+4:  )
+4:  ;
+5:  }
+7:  Reserved Word: int
+7:  ID: main
+7:  (
+7:  Reserved Word: int
+7:  ID: n
+7:  )
+7:  {
+8:  Reserved Word: return
+8:  ID: factorial
+8:  (
+8:  ID: n
+8:  )
+8:  ;
+9:  }
+11:  ID: struct
+11:  ID: hel
+11:  ID: b
+11:  [
+11:  NUM: 10
+11:  ]
+11:  ;

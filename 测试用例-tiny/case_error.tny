@@ -1,0 +1,15 @@
+{ Sample program
+  in TINY language -
+  computes factorial
+}
+read x; { input an integer }
+if x > 0 then { error: 非法运算符> }
+  fact := 1；{error: 中文分号}
+  repeat
+    fact := fact * x;
+    x := x - 1
+  until x = 0;
+  write fact  { output factorial of x }
+
+struct; {error: 非关键字}
+end

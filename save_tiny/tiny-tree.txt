@@ -1,0 +1,10 @@
+Syntax error at line 6: syntax error
+Current token: Lex Error Token: >
+Syntax error at line 7: syntax error
+Current token: Lex Error Token: ï
+Syntax error at line 11: syntax error
+Current token: reserved word: until
+Syntax error at line 14: syntax error
+Current token: ID, name= struct
+  Read: x
+  If

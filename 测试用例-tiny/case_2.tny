@@ -1,0 +1,19 @@
+{
+    Sample Program in Tiny Language
+    Function: Judge prime
+    Input: An integer
+    Output: bool
+}
+
+read n; {input an integer}
+i := 2;
+
+repeat
+  if (n / i) = 0 then
+    write 0
+  else
+    i := i + 1;
+  end
+until n < (i * i);
+
+write 1 

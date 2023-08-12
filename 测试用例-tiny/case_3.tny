@@ -1,0 +1,11 @@
+{
+    Input: a b
+    Ouput: (a + b)^2
+}
+
+read a; read b;
+
+sum := a + b;
+squareSum := sum * sum;
+
+write squareSum
